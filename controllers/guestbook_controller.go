@@ -36,10 +36,12 @@ type GuestbookReconciler struct {
 
 func (r *GuestbookReconciler) Reconcile(req ctrl.Request) (ctrl.Result, error) {
 	_ = context.Background()
-	_ = r.Log.WithValues("guestbook", req.NamespacedName)
+	log := r.Log.WithValues("guestbook", req.NamespacedName)
 
 	// your logic here
-
+	log.Info("I'm a reconciler")
+	log.Info("Woot 11111")
+	log.Info("Woot 222222")
 	return ctrl.Result{}, nil
 }
 

@@ -1,6 +1,6 @@
 version: "2"
 domain: my.domain
-repo: github.com/chainlink/kubebuildertest
+repo: github.com/chainlink/kubebuildertest-controller
 resources:
 - group: webapp
   version: v1
