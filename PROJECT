@@ -1,0 +1,7 @@
+version: "2"
+domain: my.domain
+repo: github.com/chainlink/kubebuildertest
+resources:
+- group: webapp
+  version: v1
+  kind: Guestbook
