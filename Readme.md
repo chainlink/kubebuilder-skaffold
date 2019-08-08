@@ -15,7 +15,7 @@ kubebuilder create api --group webapp --version v1 --kind Guestbook
 ```
 
 ## Kustomize fix
-Kubebuilder 2.0-beta-0 and Kustomize 3.1 don't play well together just yet. [see here](https://github.com/kubernetes-sigs/kustomize/issues/1429)
+Kubebuilder 2.0-beta-0 and Kustomize 3.1 don't play well together just yet. [See here](https://github.com/kubernetes-sigs/kustomize/issues/1429)
 
 The fix:
 ```
@@ -33,7 +33,7 @@ in
 This will allow `make deploy` to run successfully
 
 ## Skaffold
-Kubebuilder and Skaffold don't play well together either [see here](https://github.com/GoogleContainerTools/skaffold/issues/1737) as skaffold messes with CRDs, but we can work around that
+Kubebuilder and Skaffold don't play well together either, ([see here](https://github.com/GoogleContainerTools/skaffold/issues/1737)) as skaffold messes with CRDs, but we can work around that.
 
 Setting up skaffold:
 1.  Add the `skaffold.yaml` file
