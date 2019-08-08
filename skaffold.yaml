@@ -1,0 +1,8 @@
+apiVersion: skaffold/v1beta9
+kind: Config
+build:
+  artifacts:
+  - image: gcr.io/kyle-dev-237522/kubebuildertest
+deploy:
+  kustomize:
+    path: config/default
